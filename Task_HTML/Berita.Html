@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laman Web Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            min-height: 150vh;
+        }
+        header {
+            background-color: #B8001F;
+            color: #F5F5F5;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #E5D9F2;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #3B3030;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #100b0b;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+            
+        }
+        h2 {
+            border-bottom: 2px solid #B8001F;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .section-content {
+            margin-bottom: 30px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 14px;
+            transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+        footer.hidden {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Selamat Datang di Laman Web Sederhana</h1>
+</header>
+
+<nav>
+    <a href="Berita.Html">Beranda</a>
+    <a href="Information.html">Information</a>
+    <a href="Contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <section id="home">
+        <h2>Beranda</h2>
+        <div class="section-content">
+            <p><center><strong style="font-size: 24px;">Selamat datang di <strong>Lambe Vin</strong></strong></center></p>
+            <div style="text-align: center;">
+                <img src="gosip.jpeg" width="50%" alt="Gambar Gosip"/>
+            </div>
+            <p>Jendela informasi Anda ke dunia. Kami hadir untuk memenuhi kebutuhan Anda akan informasi yang akurat, terpercaya, dan mendalam.</p>
+        </div>        
+
+        <div class="section-content">
+            <h3>Mengapa Memilih Lambe Vin?</h3>
+            <ul>
+                <li><strong>Keakuratan Tanpa Kompromi:</strong> Tim jurnalis profesional kami berkomitmen untuk menyajikan lautan fakta, bukan sensasi. Setiap berita melewati proses verifikasi ketat sebelum dipublikasikan.</li>
+                <li><strong>Kecepatan yang Tak Tertandingi:</strong> Jadilah yang pertama tahu! Berita terkini langsung hadir di ujung jari Anda, 365/1.</li>
+                <li><strong>Kedalaman Analisis:</strong> Kami mengupas tuntas setiap isu dengan analisis mendalam dari para pakar terkemuka.</li>
+                <li><strong>Cakupan Luas, Fokus Tajam:</strong> Dari politik hingga gaya hidup, dari ekonomi hingga hiburan, semua aspek penting dan tidak penting terangkum dalam satu portal.</li>
+            </ul>
+        </div>
+
+        <div class="section-content">
+            <h3>Publikasi Unggulan</h3>
+            <ul>
+                <li><strong>Fokus Nasional:</strong> Perkembangan terkini dari Sabang sampai Merauke.</li>
+                <li><strong>Dunia Hari Ini:</strong> Berita internasional yang memengaruhi kita semua.</li>
+                <li><strong>Bisnis & Ekonomi:</strong> Informasi pasar dan tren bisnis terkini.</li>
+                <li><strong>Iptek & Inovasi:</strong> Temuan yang mengubah masa depan.</li>
+                <li><strong>Olahraga:</strong> Liputan lengkap dari berbagai cabang olahraga.</li>
+                <li><strong>Gaya Hidup:</strong> Inspirasi untuk hidup lebih baik dan bermakna.</li>
+            </ul>
+        </div>
+
+        <div class="section-content">
+            <h3>Berlangganan Sekarang!</h3>
+            <p>Dapatkan akses premium ke seluruh konten kami dan nikmati pengalaman membaca tanpa iklan. Tersedia paket berlangganan yang fleksibel sesuai kebutuhan Anda.</p>
+        </div>
+    </section>
+</div>
+
+<footer style="position: fixed; bottom: 0; width: 100%; background-color: rgba(0, 0, 0, 0.5); color: white; text-align: center; padding: 2px 0;">
+    <p>&copy; 2024 Laman Web Sederhana. Semua hak cipta dilindungi.</p>
+</footer>
+
+</body>
+</html>

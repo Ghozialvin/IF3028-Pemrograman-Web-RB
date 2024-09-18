@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #B8001F;
+            color: #E5D9F2;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+            color: #444;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+        }
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 14px;
+            transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+        footer.hidden {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kontak Kami</h1>
+</header>
+
+<a href="Berita.Html">
+    <button style="padding: 10px 20px; font-size: 16px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Kembali ke Beranda
+    </button>
+</a>
+
+<div class="container">
+
+    
+    <h2>Hubungi Kami</h2>
+    <p>Jika Anda memiliki pertanyaan, masukan, atau butuh informasi lebih lanjut, silakan kirim pesan kepada kami menggunakan formulir di bawah ini.</p>
+
+    <form action="mailto:email@example.com" method="POST" enctype="text/plain">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+
+        <input type="submit" value="Kirim">
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 Laman Web Sederhana. Semua hak cipta dilindungi.</p>
+</footer>
+
+</body>
+</html>
