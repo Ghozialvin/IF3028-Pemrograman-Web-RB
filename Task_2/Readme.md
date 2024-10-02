@@ -2,6 +2,6 @@ Folder ini merupakan Tugas Individu 2 Dari Mata Kuliah Pemrograman Web IF3028 Ke
 1. Dengan POST Method
 2. Dengan Localdata Menggunakan Javascript
 
-Nama : Ghozi Alvin Karim 
+Nama : Ghozi Alvin Karim /n
 Nim : 121450123 
 Kelas : Pemrograman Web (RB)
