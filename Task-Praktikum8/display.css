@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+.background {
+    background-image: url(data.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: fadeIn 3s ease forwards;
+}
+.container{
+    background-color: #C9E6F0;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+    animation: fadeInText 2s ease forwards;
+}
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "DynaPuff", "system-ui";
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-style: italic;
+    animation: fadeInText 2s ease forwards;
+}
+a{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px 10px 10px 40px;
+    color: black;
+    animation: fadeInText 2s ease forwards;
+
+}
+table {
+    width: 90%;
+    border-collapse: collapse;
+    animation: fadeInText 2s ease forwards;
+}
+table, th, td {
+    border: 1px solid black;
+    margin: 20px 10px 15px 20px;
+}
+th{
+    padding: 8px;
+    text-align: center;
+    font-family: "DynaPuff", "system-ui" ;
+    font-weight: bold;
+}
+td{
+    padding: 8px;
+    text-align: justify;
+    font-family: "DynaPuff", "system-ui" ;
+}
+/* Animasi fade-in untuk seluruh elemen */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsiveness */
+/* Tablet Landscape dan Laptop Kecil */
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .form-container {
+        padding: 40px;
+    }
+
+    input {
+        font-size: 0.95rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablet Portrait dan Ukuran Lebih Kecil */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .form-container {
+        padding: 30px;
+    }
+
+    input {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    .background {
+        justify-content: flex-start;
+        padding-top: 50px;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input {
+        font-size: 0.85rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+}
